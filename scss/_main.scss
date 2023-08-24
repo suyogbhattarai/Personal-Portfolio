@@ -1,0 +1,308 @@
+* {
+    margin: 0px;
+    padding: 0x;
+    box-sizing: border-box;
+}
+//colors
+$yellow:#FC9916;
+$blue:#323FA3;
+$green:#1AA528;
+$skin:#E0BA62;
+$red:#DF2C22;
+
+//font-family
+$poppins:  'Poppins', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+
+
+
+
+    .card{
+        
+    
+        height: 90vh;
+       
+        box-shadow: 0px 4px 10px 10px rgba(0, 0, 0, 0.50);
+        border-radius: 20px;
+        background-color:$yellow;
+        
+
+        .job-title::before{
+            content: '';
+            position: absolute;
+            
+            height: 45%;
+            width: 2px;
+            background: black;
+            top: 23px;
+            left: 112px;
+        }
+        .job-title::after{
+            content: '';
+            position: absolute;
+            
+            height: 45%;
+            width: 2px;
+            background: black;
+            top: 23px;
+            left:300px;
+        }
+        .social::after{
+            content: '';
+            position: absolute;
+            top: 69px;
+            width: 20%;
+            height: 2px;
+            background: rgba(148, 146, 146, 1);
+            border-radius: 100px;
+
+        }
+        .btns{
+            .btn-1{
+                position: relative;
+                overflow: hidden;
+                a{p{
+                    transition: 0.9s;
+                    z-index: 1;
+
+                }
+                i{
+                    transition:0.9s ;
+                    z-index: 1;
+                }
+            }
+            }
+            .btn-1:hover{a{p{transform: translateX(-100px,);}}}
+            .btn-1:hover{a {z-index: 1; i{transform: translateX(-40px,);color: white;}}}
+            .btn-1::before{
+                position: absolute;
+                content: '';
+                background: black;
+                border-radius: 100%;
+               
+                height: 0px;
+                width: 0px;
+                top: -10px;
+                left: -20%;
+                transition: 0.9s;
+                
+
+
+            }
+            .btn-1:hover::before{
+                position: absolute;
+                content: '';
+                background: $blue;
+                border-radius: 100%;
+                height:35px;
+                width: 35px;
+                top: 5px;
+                
+                left: 37%;
+                
+
+
+            }
+            .btn-2{
+                position: relative;
+                overflow: hidden;
+                a{p{
+                    transition: 0.9s;
+                    z-index: 1;
+
+                }
+                i{
+                    transition:0.9s ;
+                    z-index: 1;
+                }
+            }
+            }
+            .btn-2:hover{a{p{transform: translateX(-110px,);}}}
+            .btn-2:hover{a {z-index: 1; i{transform: translateX(-51px,);color: white;}}}
+            .btn-2::before{
+                position: absolute;
+                content: '';
+                background: black;
+                border-radius: 100%;
+                height: 0px;
+                width: 0px;
+                top: -10px;
+                left: -20%;
+                transition: 0.9s;
+                
+
+
+            }
+            .btn-2:hover::before{
+                position: absolute;
+                content: '';
+                background: $blue;
+                border-radius: 100%;
+                height:35px;
+                width: 35px;
+                top: 4px;
+                left: 37%;
+                
+
+
+            }
+            
+        }
+        
+    }
+    .left{
+        width: 20%;  background: #FB9713; box-shadow: 2px 0px 50px rgba(0, 0, 0, 0.50);
+        position:fixed;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 70px;
+    height: 100vh;
+        
+    
+        
+    }
+    .right{
+        
+        
+        width: 80%;
+        margin-left: 20%;
+        .nav-bar{
+       
+        
+            ul{
+                width: 700px;
+                gap: 50px;
+             
+
+                a{
+
+                    &.menu-link.active{
+                        position: relative;
+                        color: #323FA3;
+                        &:before{
+                            position: absolute;
+                            content: '';
+                            top: 110%;
+                            left: 0px;
+                            width: 100%;
+                            height: 2px;
+                            transform: scale(1,1);
+                            background-color:$blue;
+                         
+                            border-radius: 10px;
+    
+                    }
+                }
+            
+                    
+                    &:hover{
+                        color: #323FA3;
+                        
+                    }
+                    
+                  
+                 
+                    transition: 0.5s;
+                    position: relative;
+                    &:before{
+                        position: absolute;
+                        content: '';
+                        top: 110%;
+                        left: 0;
+                        width: 100%;
+                        height: 2px;
+                        transform: scale(0,1);
+                        background-color:black;
+                        transition: 0.5s;
+                        border-radius: 10px;
+
+                    }
+                    
+                    &:hover::before {
+                        position: absolute;
+                    
+                        transform: scale(1,1);
+                    
+                        background-color: $blue;
+                    
+                        
+                    
+                    
+                    }
+                }
+            }
+        }
+        
+        
+        .banner-1{
+            background-color: #323FA3;
+            margin-top: 30px;
+            padding: 30px 0px;
+            padding-left: 100px;
+            padding-right:40px ;
+            font-family:$montserrat;
+            
+         
+            .ban-content{
+                display: flex;
+                justify-content: space-between;
+                
+                
+            .intro{
+                line-height: 40px;
+            }
+            .std-pose{
+                position: relative;
+                top: 20px;
+                .pose{
+                    position: absolute;
+                    bottom: 16px;
+                    width: 100%;
+                    transform: scale(2,2);
+                }
+                .yellow{
+                    position: absolute;
+                    top: 35px;
+                    left: 13px;
+
+                }
+            }
+            .hire{
+                text-align: center;
+                line-height: 60px;
+                display: flex;
+                gap: 10px;
+                
+                .hire-btn{
+                    color:white;
+                    background-color: #1AA528;
+                    padding: 13px 25px;
+                    border-radius: 100px;
+                    
+                
+            }
+          
+            }
+   
+
+        }
+
+        }
+        .banner-2{
+            background-color: #1AA528; 
+            
+            
+          
+        }
+    }
+
+
+        
+    
+
+
+
+

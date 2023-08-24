@@ -1,0 +1,17 @@
+@mixin flex($jc,$ai){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+
+}
+@mixin position($top,$left){
+    display: absolute;
+    top: $top;
+    left: $left;
+
+}
+@mixin res($max){
+    @media(max-width:$max){
+        @content;    
+    }
+}
